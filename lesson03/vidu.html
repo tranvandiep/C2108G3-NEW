@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML & CSS for beginer</title>
+
+	<!-- Tao bao nhieu the style nay trong 1 page cung dc => de bat ky vi tri nao -->
+	<style type="text/css">
+		* {
+			color: blue;
+			font-size: 35px;
+		}
+
+		/*Thuc hien go css o day*/
+		body {
+			/*background-color: #8ecdf5;*/
+			/*background-image: url(https://wallpapercave.com/wp/wp6981239.jpg);*/
+			background-size: contain;
+			background-repeat: repeat;
+		}
+
+		/*Kha tai su dung code css rat ok -> thiet ke theo cach nay*/
+		a {
+			color: red;
+			background-color: yellow;
+			font-size: 22px;
+		}
+
+		/*Mo rong*/
+		/*HTML/CSS -> selector: tag name (body, a, .v.v), id, class*/
+		/*Khi css trung nhau -> thu tu uu tien se la nhu sau*/
+		/**
+		 * * -> tag name -> class -> id
+		 */
+		.color-green {
+			color: green;
+		}
+
+		#abc {
+			color: black;
+		}
+
+		/*class -> to hop nhieu class trong 1 the*/
+		/**
+		 * Uu tien trong TH -> gop css cua class -> thang duoi se de len thang tren
+		 */
+		.content {
+			background-color: yellow;
+			font-size: 22px !important; //important -> muc do uu tien cao nhat
+		}
+
+		.active {
+			font-size: 30px;
+		}
+
+		/*Muc do uu tien cao nhat*/
+		/*Nang cao tiep theo -> to hop the & class & id*/
+		ul li {
+			color: red;
+		}
+
+		/*Tat the con tag name(li) + parent class -> group1 */
+		/*.group1 li {
+			color: red;
+		}*/
+
+		.group2 li {
+			color: black;
+		}
+
+		/*TH -> co dinh the tra la ul & class:  group1*/
+		ul.group1 li {
+			color: red;
+		}
+
+		label:hover {
+			background-color: yellow;
+		}
+
+		label:active {
+			background-color: red;
+		}
+
+		p:first-letter {
+			font-size: 200px !important;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<img src="https://photo-baomoi.zadn.vn/w700_r16x9_sm/2021_12_10_94_41148982/56c63f7d733f9a61c32e.jpg" style="width: 640px; height: auto;">
+	<br/>
+	<img src="https://photo-baomoi.zadn.vn/w700_r16x9_sm/2021_12_10_94_41148982/56c63f7d733f9a61c32e.jpg" style="min-width: 900px; max-height: 2000px;">
+	<br/>
+	<a target="_self" href="https://suckhoedoisong.vn//sang-10-12-gan-7700-ca-covid-19-nang-dang-dieu-tri-ai-se-duoc-tiem-mui-vaccine-bo-sung-nhac-lai-tu-hom-nay-o-tp-hcm-169211210072034177.htm">Sáng 10/12: Gần 7.700 ca COVID-19 nặng đang điều trị; Ai sẽ được tiêm mũi vaccine bổ sung, nhắc lại từ hôm nay ở TP HCM?</a>
+	<br/>
+	<a target="_blank" href="https://suckhoedoisong.vn//sang-10-12-gan-7700-ca-covid-19-nang-dang-dieu-tri-ai-se-duoc-tiem-mui-vaccine-bo-sung-nhac-lai-tu-hom-nay-o-tp-hcm-169211210072034177.htm" class="color-green" id="abc">Sáng 10/12: Gần 7.700 ca COVID-19 nặng đang điều trị; Ai sẽ được tiêm mũi vaccine bổ sung, nhắc lại từ hôm nay ở TP HCM?</a>
+	<p>Xin Chao</p>
+	<br/>
+	<label>OKOK & ABC</label>
+	<ul class="group1">
+		<!-- color: red -->
+		<li class="content active">Vi du 1</li>
+		<li class="content">Vi du 2</li>
+		<li class="content">Vi du 3</li>
+		<li>Vi du 4</li>
+		<li>Vi du 5</li>
+	</ul>
+
+	<ul class="group2">
+		<!-- color: black -->
+		<li>Vi du 1</li>
+		<li>Vi du 2</li>
+		<li>Vi du 3</li>
+		<li>Vi du 4</li>
+		<li>Vi du 5</li>
+	</ul>
+
+	<div class="group1">
+		<li>Vi du 55555</li>
+	</div>
+</body>
+</html>
